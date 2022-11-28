@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="HOMESEEKER INFO!">
+    <title>HOMESEEKER INFO!</title>
+    <link rel="stylesheet" href="stylesheets/style.css" />
+    <link rel="icon" href="images/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="styleHomeseekerinfo.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">Homeseeker info</div>
+        <form method="post" id="f1" action="/post-homeseeker-info">
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details">Preferred city</span>
+                    <input type="text" placeholder="Enter your preferred city" name="preferred_city" id="preferred_city" autofocus>
+                </div>
+            
+                <div class="input-box">
+                    <span class="details">Preferred area</span>
+                    <input type="text" placeholder="Enter your preferred area" name="preferred_area" id="preferred_area">
+                </div>
+                <div class="input-box">
+                    <span class="details">Preferred house type</span>
+                    <input type="radio" name="preferred_house_type" value="FLAT" id="preferred_house_type">Flat<br>
+                    <input type="radio" name="preferred_house_type" value="FLAT" id="preferred_house_type">Bungalow<br>
+                </div>
+                
+                <div class="input-box">
+                    <span class="details">Preferred floor</span>
+                    <input type="number" placeholder="Enter your preferred floor if any" name="preferred_floor" min="0" id="preferred_floor">
+                </div>
+
+                <div class="input-box">
+                    <span class="details">Preferred size</span>
+                    <input type="number" placeholder="preferred size" name="preferred_size" min="0" id="preferred_size">
+                </div>
+
+                <div class="input-box">
+                    <span class="details">No of rooms</span>
+                    <input type="number" placeholder="Enter no of rooms required" name="no_of_rooms" min="0" value="0" id="no_of_rooms">
+                </div>
+
+                <div class="input-box">
+                    <span class="details">Pet allowance</span>
+                    <input type="radio" name="prefers_pet_allowance" value="1" id="prefers_pet_allowance">Yes<br>
+                    <input type="radio" name="prefers_pet_allowance" value="0" id="prefers_pet_allowance">No<br>
+                </div>
+
+                <div class="input-box">
+                    <span class="details">Furnishing status</span>
+                    <input type="radio" name="preferred_furnishing_status" value="FURNISHED" id="preferred_furnishing_status">Fully furnished<br>
+                    <input type="radio" name="preferred_furnishing_status" value="SEMIFURNISHED" id="preferred_furnishing_status">Semifurnished<br>
+                    <input type="radio" name="preferred_furnishing_status" value="UNFURNISHED" id="preferred_furnishing_status">Completely Unfurnished <br>
+                </div>
+
+                <div class="input-box">
+                    <span class="details">Parking spaces</span>
+                    <input type="number" placeholder="parking spaces" name="no_of_parking_spaces" min="0" value="0" id="no_of_parking_spaces">
+                </div>
+
+                <div class="button">
+                        <input type="submit" value="Submit" id="submit-button">
+                        <input type="reset" value="Clear-response" id="reset-button">
+                    </div>
+                </div>
+            
+            </div>
+        </form>
+
+    </div>
+
+    <main>
+        <form method="post" id="f1" action="/post-homeseeker-info">
+          
+            <p>
+                <label for="no_of_parking_spaces">Minimum number of parking spaces required:</label>
+                <input type="number" name="no_of_parking_spaces" min="0" value="0" id="no_of_parking_spaces">
+            </p>
+            <input type="submit" value="Submit" id="submit-button">
+            <input type="reset" id="reset-button" value="Clear response">
+        </form>
+    </main>
+
+</body>
+
+</html>
